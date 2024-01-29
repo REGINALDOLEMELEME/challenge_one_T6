@@ -10,7 +10,7 @@
     <main class="conteudo">
        <section class="conteudo__area">
        <img class="conteudo__area__logo" src="/assets/my-logo.png" alt="logo contendo a letra R">
-       <textarea name="texto" id="texto-para-converter" cols="30" rows="10">Digite seu Texto</textarea>
+       <textarea name="texto" id="texto-para-converter" cols="30" rows="10" oninput="validarEntradaDoTexto(this)">Digite seu Texto</textarea>
        <div class="contendo__area__mensagem">
         <img class="conteudo__area__mensagem__exclamacao" src="assets/exclamacao.png" alt="imagem contendo uma esfera com um ponto de exclamacao em seu interior">
         <p class="conteudo__area_texto">Apenas letras minúsculas e sem acento</p>
@@ -27,7 +27,7 @@
         <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
        </section>
     </main>
-    <footer class="rodape">Create by Reginaldo da Silva leme -  2024</footer>
+    <footer class="rodape">Create by Reginaldo da Silva Leme -  2024</footer>
 </body>
 
 <script src="app.js"></script>

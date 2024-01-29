@@ -1,3 +1,17 @@
+
+function validarEntradaDoTexto(textarea) {
+ 
+    let entrada = textarea.value;
+ 
+    entrada = entrada.replace(/[^\w\s]|_/gi, '');  
+    entrada = entrada.toLowerCase(); 
+
+     textarea.value = entrada;
+  }
+
+
+
+
 function verificarSegredo() {
     // Obtém o valor digitado na textarea
     var textoDigitado = document.getElementById("textoInput").value;
