@@ -100,7 +100,7 @@ justify-content: center;
     color: var(--secondary-bg-color);
     height: 67px;
     border-radius: 24px;
-    font-size: 1rem ;
+    font-size: 1.5rem ;
 
 }
 .conteudo__area__botoes__descriptografar{
@@ -109,7 +109,33 @@ justify-content: center;
     color: var(--tertiary-bg-color);
     height: 67px;
     border-radius: 24px;
-    font-size: 1.2rem ;
+    font-size: 1.5rem ;
+}
+
+#conteudo__texto__conversor__mensagem__traduzida{
+
+    background: transparent; /* Fundo transparente */
+    width: 95%; /* Largura fixa */
+    height: 85%; /* Altura fixa */
+    border: none;
+    padding: 15px; /* Espaçamento interno para o conteúdo */
+    resize: none; /* Impede redimensionamento pelo usuário */
+    font-size: 1.8rem;
+    color: var(--tertiary-bg-color);
+    outline: none;
+}
+
+#conteudo__texto__conversor__botao__copiar{
+
+    background-color: white;
+    color: var(--tertiary-bg-color);
+    border: 2px solid var(--tertiary-bg-color); /* Green */
+    border-radius: 24px;
+    width: 50%;
+    height: 6%;
+    font-size: 1.4rem;
+    margin-top: 10px;
+
 }
 
 .rodape{
