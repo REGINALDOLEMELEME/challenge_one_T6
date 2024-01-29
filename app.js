@@ -47,8 +47,9 @@ function validarEntradaDoTexto(textarea) {
     mensagemConvertida = document.getElementById("conteudo__texto__conversor__mensagem__traduzida");
     mensagemConvertida.textContent = texto;
     mensagemConvertida.style.display = "block";
-    document.getElementById("conteudo__texto__conversor__botao__copiar").style.display = "block";
-
+    botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
+    botaoCopiar.style.display = "block";
+    botaoCopiar.textContent = "Copiar";
   }
 
   function descriptografarTexto() {
@@ -89,9 +90,9 @@ function validarEntradaDoTexto(textarea) {
        mensagemConvertida = document.getElementById("conteudo__texto__conversor__mensagem__traduzida");
        mensagemConvertida.textContent = texto;
        mensagemConvertida.style.display = "block";
-       document.getElementById("conteudo__texto__conversor__botao__copiar").style.display = "block";
-   
-     
+       botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
+       botaoCopiar.style.display = "block";
+       botaoCopiar.textContent = "Copiar"; 
   }
 
   function copiarConteudo() {
