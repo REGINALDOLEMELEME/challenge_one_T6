@@ -67,17 +67,11 @@ function validarEntradaDoTexto(textarea) {
        const imagem = document.querySelector('.conteudo__texto__conversor__imagem');
    
        // Remove os elementos existentes
-       if (textoAtual !== null) {
+       if (textoAtual !== null || mensagemPrincipal !== null || imagem !== null) {
            secao.removeChild(textoAtual);
-         }
-   
-       if (mensagemPrincipal !== null) {
            secao.removeChild(mensagemPrincipal);
-       }
-   
-       if (imagem !== null) {
            secao.removeChild(imagem);
-       }
+         }
      
        // Obtém o texto do textarea
        let texto = textarea.value;
