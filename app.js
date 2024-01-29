@@ -10,88 +10,99 @@ function validarEntradaDoTexto(textarea) {
   }
 
   function criptografarTexto() {
-    // Obtém a referência da seção
+
+
     const secao = document.querySelector('.conteudo__texto_conversor');
-  
-    // Obtém a referência do textarea
     const textarea = document.getElementById('texto-para-converter');
   
-    // Obtém a referência da tag p atual
-    const textoAtual = document.getElementById('conteudo__texto__conversor__texto');
-    const mensagemPrincipal = document.getElementById('conteudo__texto_conversor__mensagem');
-    const imagem = document.querySelector('.conteudo__texto__conversor__imagem');
-
-    // Remove os elementos existentes
-    if (textoAtual !== null) {
-        secao.removeChild(textoAtual);
-      }
-
-    if (mensagemPrincipal !== null) {
-        secao.removeChild(mensagemPrincipal);
-    }
-
-    if (imagem !== null) {
-        secao.removeChild(imagem);
-    }
-  
-    // Obtém o texto do textarea
     let texto = textarea.value;
-  
+
+    if(texto !== ''){
     // Substitui as letras de acordo com a regra
     texto = texto.replace(/e/g, 'enter')
                  .replace(/i/g, 'imes')
                  .replace(/a/g, 'ai')
                  .replace(/o/g, 'ober')
                  .replace(/u/g, 'ufat');
-  
-    mensagemConvertida = document.getElementById("conteudo__texto__conversor__mensagem__traduzida");
-    mensagemConvertida.textContent = texto;
-    mensagemConvertida.style.display = "block";
-    botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
-    botaoCopiar.style.display = "block";
-    botaoCopiar.textContent = "Copiar";
-    botaoCopiar.style.backgroundColor = "white";
-    botaoCopiar.style.color = "#0A3871";
+
+      exibirMensagem(texto);
+
+                     
+    }else{
+
+      ocultarMensagem();
+    }
+    
+
+
   }
 
   function descriptografarTexto() {
-       // Obtém a referência da seção
-       const secao = document.querySelector('.conteudo__texto_conversor');
-  
-       // Obtém a referência do textarea
-       const textarea = document.getElementById('texto-para-converter');
-     
-       // Obtém a referência da tag p atual
-       const textoAtual = document.getElementById('conteudo__texto__conversor__texto');
-       const mensagemPrincipal = document.getElementById('conteudo__texto_conversor__mensagem');
-       const imagem = document.querySelector('.conteudo__texto__conversor__imagem');
+    const secao = document.querySelector('.conteudo__texto_conversor');
+    const textarea = document.getElementById('texto-para-converter');
+
+    // Obtém o texto do textarea
+      let texto = textarea.value;
    
-       // Remove os elementos existentes
-       if (textoAtual !== null || mensagemPrincipal !== null || imagem !== null) {
-           secao.removeChild(textoAtual);
-           secao.removeChild(mensagemPrincipal);
-           secao.removeChild(imagem);
-         }
-     
-       // Obtém o texto do textarea
-       let texto = textarea.value;
-     
+      
+      if(texto !== ''){
         // Substitui as letras de acordo com a regra
         texto = texto.replace(/enter/g, 'e')
         .replace(/imes/g, 'i')
         .replace(/ai/g, 'a')
         .replace(/ober/g, 'o')
         .replace(/ufat/g, 'u');
+       
+      exibirMensagem(texto);
+
+                     
+      }else{
+  
+        ocultarMensagem();
+      }
      
-       mensagemConvertida = document.getElementById("conteudo__texto__conversor__mensagem__traduzida");
-       mensagemConvertida.textContent = texto;
-       mensagemConvertida.style.display = "block";
-       botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
-       botaoCopiar.style.display = "block";
-       botaoCopiar.textContent = "Copiar"; 
-       botaoCopiar.style.backgroundColor = "white";
-       botaoCopiar.style.color = "#0A3871";
+   
   }
+
+  function exibirMensagem(texto){
+
+    const textoAtual = document.getElementById('conteudo__texto__conversor__texto');
+    const mensagemPrincipal = document.getElementById('conteudo__texto_conversor__mensagem');
+    const imagem = document.querySelector('.conteudo__texto__conversor__imagem');
+    const mensagemConvertida = document.getElementById("conteudo__texto__conversor__mensagem__traduzida");
+    const botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
+
+    textoAtual.style.display = 'none';
+    mensagemPrincipal.style.display = 'none';
+    imagem.style.display = 'none';
+          
+    mensagemConvertida.textContent = texto;
+    mensagemConvertida.style.display = "block";
+    botaoCopiar.style.display = "block";
+    botaoCopiar.textContent = "Copiar";
+    botaoCopiar.style.backgroundColor = "white";
+    botaoCopiar.style.color = "#0A3871";
+
+    }
+
+    function ocultarMensagem(){
+
+      const textoAtual = document.getElementById('conteudo__texto__conversor__texto');
+      const mensagemPrincipal = document.getElementById('conteudo__texto_conversor__mensagem');
+      const imagem = document.querySelector('.conteudo__texto__conversor__imagem');
+      const mensagemConvertida = document.getElementById("conteudo__texto__conversor__mensagem__traduzida");
+      const botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
+  
+      textoAtual.style.display = 'block';
+      mensagemPrincipal.display = 'block';
+      imagem.style.display = 'block';
+            
+      mensagemConvertida.style.display = "none";
+      botaoCopiar.style.display = "none";
+  
+      }
+  
+
 
   function copiarConteudo() {
     // Obtém a referência do parágrafo com a mensagem nova
