@@ -50,6 +50,8 @@ function validarEntradaDoTexto(textarea) {
     botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
     botaoCopiar.style.display = "block";
     botaoCopiar.textContent = "Copiar";
+    botaoCopiar.style.backgroundColor = "white";
+    botaoCopiar.style.color = "#0A3871";
   }
 
   function descriptografarTexto() {
@@ -93,6 +95,8 @@ function validarEntradaDoTexto(textarea) {
        botaoCopiar = document.getElementById("conteudo__texto__conversor__botao__copiar");
        botaoCopiar.style.display = "block";
        botaoCopiar.textContent = "Copiar"; 
+       botaoCopiar.style.backgroundColor = "white";
+       botaoCopiar.style.color = "#0A3871";
   }
 
   function copiarConteudo() {
@@ -108,32 +112,15 @@ function validarEntradaDoTexto(textarea) {
       .then(() => {
         // Exibe uma mensagem ou executa qualquer outra ação que você desejar
         botaoCopiar.textContent = "Copiado";
+        botaoCopiar.style.backgroundColor = "#0A3871";
+        botaoCopiar.style.color = "#E5E5E5";
       })
       .catch((err) => {
         console.error('Erro ao copiar para a área de transferência:', err);
       });
   }
 
-function verificarSegredo() {
-    // Obtém o valor digitado na textarea
-    var textoDigitado = document.getElementById("textoInput").value;
-
-    // Verifica se a palavra "segredo" está presente no texto após a última ocorrência
-    if (textoDigitado.toLowerCase().indexOf("segredo", ultimaOcorrencia) !== -1) {
-        // Atualiza a posição da última ocorrência
-        ultimaOcorrencia = textoDigitado.toLowerCase().indexOf("segredo", ultimaOcorrencia) + 1;
-
-        // Cria uma nova tag <p> com a mensagem
-        var novaTagP = document.createElement("p");
-        novaTagP.textContent = "A palavra secreta foi digitada novamente";
-
-        // Adiciona a nova tag <p> ao resultadoDiv
-        document.getElementById("resultadoDiv").appendChild(novaTagP);
-    }
-}
-
-
-    // Obtém a referência do textarea
+   // Obtém a referência do textarea
     const textarea = document.getElementById('texto-para-converter');
 
     // Adiciona um ouvinte de evento quando o conteúdo da página é totalmente carregado
