@@ -149,3 +149,108 @@ justify-content: center;
     justify-content: center;
 
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .conteudo{
+
+        flex-direction: column;
+        width: 85%;
+
+
+    }
+
+    .conteudo__area{
+
+        flex: 1;
+        margin: 50px 0;
+        
+
+    }
+
+    #texto-para-converter{
+
+        font-size: 1rem;
+        flex: 1;
+
+    }
+
+    .conteudo__area_texto{
+
+        font-size: 0.8rem;
+
+    }
+
+    .conteudo__texto_conversor{
+
+        flex: 1;
+       
+
+    }
+
+    .conteudo__area__botoes__criptografar{
+
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .conteudo__area__botoes__descriptografar{
+
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .rodape{
+
+        display: none;
+    }
+
+    .conteudo__texto__conversor__imagem{
+
+        display: none;
+    }
+
+    #conteudo__texto_conversor__mensagem{
+        font-size: 0.9rem;
+
+    }
+
+    #conteudo__texto__conversor__texto{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #conteudo__texto__conversor__mensagem__traduzida{
+
+     font-size: 0.8rem;
+
+    }
+
+    #conteudo__texto__conversor__botao__copiar{
+
+        width: 30%;
+        height: 19%;
+        font-size: 1.0rem;
+        margin: 10px;
+
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {}
+
+
+@media only screen and (min-width: 1350px) {
+    #conteudo__texto_conversor__mensagem{
+        font-size: 1.1rem;
+
+    }
+
+    #conteudo__texto__conversor__texto{
+        font-size: 1.0rem;
+        text-align: center;
+    }
+
+}
