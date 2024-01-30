@@ -24,7 +24,7 @@ body {
 
 .conteudo {
 display: flex;
-height: 89.5vh;
+height: 88.5vh;
 margin: 1.5% 5%;
 
     
@@ -90,7 +90,7 @@ justify-content: center;
     justify-content: flex-end;
     justify-items: center;
     gap: 15px;
-    margin: 0 10px;
+    margin: -12px 10px;
 
 }
 
@@ -98,9 +98,9 @@ justify-content: center;
     flex:1;
     background-color: var(--tertiary-bg-color);
     color: var(--secondary-bg-color);
-    height: 67px;
+    height: 65px;
     border-radius: 24px;
-    font-size: 1.5rem ;
+    font-size: 1.3rem ;
 
 }
 .conteudo__area__botoes__descriptografar{
@@ -143,10 +143,9 @@ justify-content: center;
     background-color: #0A3871;
     color: var(--quarter-bg-color);
     font: var(--font-principal);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 10px;
     display: flex;
-    position: sticky;
     justify-content: center;
 
 }
