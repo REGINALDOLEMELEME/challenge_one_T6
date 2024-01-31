@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 :root{
-
     --primary-bg-color:  #E5E5E5;
     --secondary-bg-color: white;
     --tertiary-bg-color: #0A3871;
@@ -19,20 +17,16 @@
 body {
     font-family: var(--font-principal);
     background-color: var(--primary-bg-color);
-  
 }
 
 .conteudo {
 display: flex;
 height: 88.5vh;
 margin: 1.5% 5%;
-
-    
 }
 
 .conteudo__area {
-    flex: 3;
-    
+    flex: 3;  
 }
 
 .conteudo__area__logo{
@@ -44,7 +38,7 @@ margin: 1.5% 5%;
  display: flex;
  background-color: var(--secondary-bg-color);
  flex: 2;
-justify-content: center;
+ justify-content: center;
  border-radius: 32px;
  flex-direction: column;
  align-items: center;
@@ -52,127 +46,197 @@ justify-content: center;
 }
 
 #texto-para-converter {
-
-    background: transparent; /* Fundo transparente */
-    width: 85%; /* Largura fixa */
-    height: 60%; /* Altura fixa */
-    border: none;
-    padding: 10px; /* Espaçamento interno para o conteúdo */
-    resize: none; /* Impede redimensionamento pelo usuário */
-    margin: 0 10%;
-    font-size: 2rem;
-    color: var(--tertiary-bg-color);
-    outline: none;
-
+  background: transparent;
+  width: 85%; 
+  height: 60%; 
+  border: none;
+  padding: 10px; 
+  resize: none;
+  margin: 0 10%;
+  font-size: 2rem;
+  color: var(--tertiary-bg-color);
+  outline: none;
 }
 
-.contendo__area__mensagem{
-    display: flex;
-    align-items: center;
-    margin: 0 5%;
+.conteudo__area__mensagem{
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
 }
 
 .conteudo__area__mensagem__exclamacao{
-    width: 2%;
-    padding: 5% 5px;
+  width: 2%;
+  padding: 5% 5px;
 }
 
 .conteudo__texto__conversor__imagem{
-
   width: 50%;
-
 }
 
 
 .conteudo__area__botoes{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    justify-items: center;
-    gap: 15px;
-    margin: -12px 10px;
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-items: center;
+  gap: 15px;
+  margin: -12px 10px;
 }
 
 .conteudo__area__botoes__criptografar{
-    flex:1;
-    background-color: var(--tertiary-bg-color);
-    color: var(--secondary-bg-color);
-    height: 65px;
-    border-radius: 24px;
-    font-size: 1.3rem ;
-
+  flex:1;
+  background-color: var(--tertiary-bg-color);
+  color: var(--secondary-bg-color);
+  height: 65px;
+  border-radius: 24px;
+  font-size: 1.3rem ;
 }
 .conteudo__area__botoes__descriptografar{
-    flex:1;
-    background-color: var(--quarter-bg-color);
-    color: var(--tertiary-bg-color);
-    height: 67px;
-    border-radius: 24px;
-    font-size: 1.5rem ;
+  flex:1;
+  background-color: var(--quarter-bg-color);
+  color: var(--tertiary-bg-color);
+  height: 67px;
+  border-radius: 24px;
+  font-size: 1.5rem ;
 }
 
 #conteudo__texto__conversor__mensagem__traduzida{
-
-    background: transparent; /* Fundo transparente */
-    width: 95%; /* Largura fixa */
-    height: 85%; /* Altura fixa */
-    border: none;
-    padding: 15px; /* Espaçamento interno para o conteúdo */
-    resize: none; /* Impede redimensionamento pelo usuário */
-    font-size: 1.8rem;
-    color: var(--tertiary-bg-color);
-    outline: none;
+  background: transparent; 
+  width: 95%; 
+  height: 85%; 
+  border: none;
+  padding: 15px; 
+  resize: none; 
+  font-size: 1.8rem;
+  color: var(--tertiary-bg-color);
+  outline: none;
 }
 
 #conteudo__texto__conversor__botao__copiar{
-
-    background-color: white;
-    color: var(--tertiary-bg-color);
-    border: 2px solid var(--tertiary-bg-color); /* Green */
-    border-radius: 24px;
-    width: 50%;
-    height: 6%;
-    font-size: 1.4rem;
-    margin-top: 10px;
-
+  background-color: white;
+  color: var(--tertiary-bg-color);
+  border: 2px solid var(--tertiary-bg-color); /* Green */
+  border-radius: 24px;
+  width: 50%;
+  height: 6%;
+  font-size: 1.4rem;
+  margin-top: 10px;
 }
 
 .rodape{
-
-    background-color: #0A3871;
-    color: var(--quarter-bg-color);
-    font: var(--font-principal);
-    font-size: 1.1rem;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+  background-color: #0A3871;
+  color: var(--quarter-bg-color);
+  font: var(--font-principal);
+  font-size: 1.1rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Ajustes para dispositivos pequenos (celulares, 600px e menores) */
+@media only screen and (max-width: 540px) {
 
     .conteudo{
-
-        flex-direction: column;
-        width: 89%;
-
-
+      flex-direction: column;
+      width: 89%;
     }
 
     .conteudo__area{
+      flex: 1; 
+    }   
+    .conteudo__area__botoes{
+      margin: 6px;
+      flex-direction: column;
+      height: 120px;
+      margin-top: 10px;
 
-        flex: 1; 
+    }
 
+    .conteudo__area__mensagem{
+      height: 10px;
+    }
+
+    .conteudo__area_texto{
+      font-size: 0.8rem;
+    }
+
+    .conteudo__texto_conversor{
+      flex: 1;
+      height: 30%;
+
+      
+
+    }
+
+    #texto-para-converter{
+      font-size: 1rem;
+      height: 237px;
+      margin: 0 ;
+      width:95%;
+    }
+
+    .conteudo__area__botoes__criptografar{
+      width: 100%; 
+      font-size: 1rem;
+    }
+
+    .conteudo__area__botoes__descriptografar{
+      width: 100%;
+      height: 150px;
+      font-size: 1rem;
+    }
+
+    .rodape{
+     display: none;
+    }
+
+    .conteudo__texto__conversor__imagem{
+      display: none;
+    }
+
+    #conteudo__texto_conversor__mensagem{
+      font-size: 0.9rem;
+    }
+
+    #conteudo__texto__conversor__texto{
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    #conteudo__texto__conversor__mensagem__traduzida{
+     font-size: 0.9rem;
+    }
+
+    #conteudo__texto__conversor__botao__copiar{
+      width: 30%;
+      height: 30%;
+      font-size: 1.0rem;
+      margin: 5px;
+     
+    }
+
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 690px) {
+
+   
+    .conteudo{
+        flex-direction: column;
+        width: 89%;
+    }
+
+    .conteudo__area{
+        flex: 3; 
     }
 
     
     .conteudo__area__botoes{
-        margin: 6px;
-        flex-direction: column;
+
         height: 120px;
-        margin: 20px;
+
     }
 
     
@@ -183,15 +247,15 @@ justify-content: center;
     }
 
     .conteudo__texto_conversor{
-
         flex: 1;
-       
+        margin-top: 10%;
+        height: 25%;
 
     }
 
     #texto-para-converter{
         font-size: 1rem;
-        height: 200px;
+        height: 57%;
         margin: 0 ;
         width:95%;
   
@@ -200,13 +264,12 @@ justify-content: center;
 
 
     .conteudo__area__botoes__criptografar{
-       width: 100%; 
+       height: 50px; 
        font-size: 1rem;
     }
 
     .conteudo__area__botoes__descriptografar{
-        width: 100%;
-        height: 150px;
+        height: 50px; 
         font-size: 1rem;
     }
 
@@ -239,27 +302,75 @@ justify-content: center;
     #conteudo__texto__conversor__botao__copiar{
 
         width: 30%;
-        height: 19%;
+        height: 40%;
         font-size: 1.0rem;
         margin: 5px;
+        
 
     }
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 800px) {}
+@media only screen and (max-width: 1348px) {
 
-
-@media only screen and (min-width: 1350px) {
-    #conteudo__texto_conversor__mensagem{
-        font-size: 1.1rem;
-
-    }
-
-    #conteudo__texto__conversor__texto{
-        font-size: 1.0rem;
-        text-align: center;
-    }
+#texto-para-converter{
+  
+  font-size: 1rem;
 
 }
+
+.conteudo__area_texto{
+
+  font-size: 0.8rem;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.conteudo__area__botoes__criptografar{
+
+  font-size: 1rem;
+  height: 50px;
+
+}
+
+.conteudo__area__botoes__descriptografar{
+
+  font-size: 1rem;
+  height: 50px;
+
+}
+
+#conteudo__texto__conversor__mensagem__traduzida{
+
+  font-size: 1rem;
+
+}
+
+#conteudo__texto__conversor__botao__copiar{
+
+  font-size: 1rem;
+}
+
+#conteudo__texto_conversor__mensagem{
+
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+#conteudo__texto__conversor__texto{
+  font-size: 0.8rem;
+  text-align: center;
+
+}
+
+.rodape{
+
+  font-size: 1rem;
+  margin-top: 4%;
+}
+
+}
+
+
