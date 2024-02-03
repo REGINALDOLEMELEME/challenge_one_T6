@@ -124,7 +124,7 @@ margin: 1.5% 5%;
 }
 
 .rodape{
-  background-color: #0A3871;
+  background-color: var(--tertiary-bg-color);
   color: var(--quarter-bg-color);
   font: var(--font-principal);
   font-size: 1.1rem;
