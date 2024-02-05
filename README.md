@@ -4,21 +4,22 @@ Bem-vindo ao CriptoApp Secreto! Esta aplicação foi desenvolvida para criptogra
 
 ## Tecnologias Utilizadas
 
-- **HTML**
-- **CSS**
-- **JavaScript**
+- ![HTML](https://img.icons8.com/color/48/000000/html-5.png) **HTML**
+- ![CSS](https://img.icons8.com/color/48/000000/css3.png) **CSS**
+- ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) **JavaScript**
+
 
 ## Funcionalidades Extras ✨
 
 ### Botão de Copiar
 
-![Botão de Copiar](icone-copiar.png)
+![Botão de Copiar](./assets/botaoCopiar.jpg)
 
 Você pode copiar facilmente o texto criptografado/descriptografado para a área de transferência clicando no botão correspondente. 📋
 
 ### Easter Egg Matrix
 
-![Ícone Matrix](icone-matrix.png)
+![Ícone Matrix](./assets/mudarLayout.gif)
 
 Clique no icone da imagem R para acionar o easter egg! Surpreendentemente, o layout da página se transformará em um tema MATRIX. 😎
 
