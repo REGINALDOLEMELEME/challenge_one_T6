@@ -154,9 +154,10 @@ function mudarLayout() {
       root.style.setProperty('--primary-bg-color', 'black');
       root.style.setProperty('--secondary-bg-color', 'black');
       root.style.setProperty('--tertiary-bg-color', '#008127');
-      imagemLogo.setAttribute('src', '/assets/my-logo - green.png');
-      imagemExclamacao.setAttribute('src', '/assets/exclamacao_green.png');
-      imagemPrincipal.setAttribute('src', '/assets/matrix.gif');  
+      imagemLogo.setAttribute('src', './assets/my-logo - green.png');
+      imagemExclamacao.setAttribute('src', './assets/exclamacao_green.png');
+      imagemPrincipal.setAttribute('src', './assets/matrix.gif'); 
+      imagemPrincipal.setAttribute('alt', 'imagem com a palavra MATRIX escrita');   
       textoConverter.style.color = "#00E800"; 
       conteudoTexto.style.color = "#E5E5E5";
       conteudoMensagem.style.color = "#00E800"; 
@@ -167,9 +168,9 @@ function mudarLayout() {
       root.style.setProperty('--primary-bg-color', '#E5E5E5');
       root.style.setProperty('--secondary-bg-color', '#E5E5E5');
       root.style.setProperty('--tertiary-bg-color', '#0A3871');
-      imagemLogo.setAttribute('src', '/assets/my-logo.png');
-      imagemExclamacao.setAttribute('src', '/assets/exclamacao.png');
-      imagemPrincipal.setAttribute('src', '/assets/High_quality_products.svg');
+      imagemLogo.setAttribute('src', './assets/my-logo.png');
+      imagemExclamacao.setAttribute('src', './assets/exclamacao.png');
+      imagemPrincipal.setAttribute('src', './assets/High_quality_products.svg');
       textoConverter.style.color = "#0A3871";
       conteudoTexto.style.color = "#0A3871";
       conteudoMensagem.style.color = "black"; 
