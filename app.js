@@ -135,6 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
   textarea.setSelectionRange(0, 0);
 });
 
+var efeitoMatrix = true;
+
 function mudarLayout() {
 
   var root = document.documentElement;
@@ -147,8 +149,29 @@ function mudarLayout() {
   var conteudoMensagem = document.getElementById('conteudo__texto_conversor__mensagem'); 
   var conversorTexto = document.getElementById('conteudo__texto__conversor__texto'); 
   var mensagemTraduzida = document.getElementById('conteudo__texto__conversor__mensagem__traduzida');
+  var botaoCopiar = document.getElementById('conteudo__texto__conversor__botao__copiar');
+  var textoNoBotao = botaoCopiar.textContent;
+  var corBotaoCopiar;
 
+  corBotaoCopiar = botaoCopiar.style.backgroundColor;
+  corBotaoCopiar = corBotaoCopiar.replace(/\s/g, '').toLowerCase();
   bodyColor = bodyColor.replace(/\s/g, '').toLowerCase();
+  console.log(efeitoMatrix, corBotaoCopiar,textoNoBotao);
+
+    
+  if (corBotaoCopiar === 'rgb(0,129,39)' && efeitoMatrix == false && textoNoBotao == 'Copiado') {
+    
+    botaoCopiar.style.backgroundColor = '#0A3871';
+    botaoCopiar.style.color = '#E5E5E5';
+  }
+
+  if (corBotaoCopiar === 'rgb(10,56,113)' && efeitoMatrix == true && textoNoBotao == 'Copiado') {
+    
+    botaoCopiar.style.backgroundColor = '#008127';
+    botaoCopiar.style.color = '#E5E5E5';
+
+  }
+
 
   if (bodyColor === "rgb(229,229,229)") {
       root.style.setProperty('--primary-bg-color', 'black');
@@ -179,4 +202,5 @@ function mudarLayout() {
       
 
   }
+  efeitoMatrix = !efeitoMatrix;
 }
