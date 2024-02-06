@@ -1,6 +1,6 @@
-# CriptoApp Secreto 🤐
+# Desafio : Decodificador de Texto 🤐
 
-Bem-vindo ao CriptoApp Secreto! Esta aplicação foi desenvolvida para criptografar textos, permitindo que você troque mensagens secretas com pessoas que conheçam o segredo da criptografia utilizada.
+Bem-vindo ao Decodificador de Textos! Esta aplicação foi desenvolvida para criptografar e descriptografar textos, permitindo que você troque mensagens secretas com seus amigos. 
 
 ## Tecnologias Utilizadas
 
@@ -30,6 +30,6 @@ Clique no icone da imagem R para acionar o easter egg! Surpreendentemente, o lay
 3. Use o botão de copiar para compartilhar o texto de forma rápida.
 4. Explore o easter egg Matrix para uma experiência única!
 
-**Lembre-se de compartilhar o segredo da criptografia com seus amigos para trocar mensagens secretas!**
+**Lembre-se de compartilhar o link da plataformar da criptografia com seus amigos para trocar mensagens secretas!**
 
-Divirta-se criptografando e descriptografando mensagens de forma segura! 🤫🔐
+Divirta-se criptografando e descriptografando mensagens entre você e seus amigos! 🤫🔐
